@@ -1,8 +1,17 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const fs = require('fs');
 
-const project = ['project1', 'project2']; // 当前项目名称 project1是一个项目 project2是一个项目 名字跟着外面的目录一样
+const projectName = 'project';
+const projectPath = `${__dirname}/${projectName}/`;
+const projectAll = fs.readdirSync(projectPath);
+const projectDir = projectAll.filter(function (v) {
+    return fs.statSync(`${projectPath}/${v}`).isDirectory() === true;
+});
+const project = projectDir.map(function (v) {
+    return `${projectName}/${v}`;
+});
 
 gulp.task('watch', function () {
     project.forEach(function (v) {

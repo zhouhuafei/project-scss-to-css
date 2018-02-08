@@ -1,5 +1,5 @@
 {
-    "name": "zmm-phone",
+    "name": "project-scss-to-css",
     "version": "1.0.0",
     "description": "no description",
     "main": "",
@@ -11,14 +11,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/zhouhuafei/zmm-phone.git"
+        "url": "git+https://github.com/zhouhuafei/project-scss-to-css.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/zhouhuafei/zmm-phone/issues"
+        "url": "https://github.com/zhouhuafei/project-scss-to-css/issues"
     },
-    "homepage": "https://github.com/zhouhuafei/zmm-phone#readme",
+    "homepage": "https://github.com/zhouhuafei/project-scss-to-css#readme",
     "devDependencies": {
         "babel-eslint": "^8.0.2",
         "babel-preset-env": "^1.6.0",
